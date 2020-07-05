@@ -10,13 +10,13 @@ long long last_time = 0;
 
 void setup() {
   while(!bno055.begin()) delay(20);
-	Serial.begin(9600);
+	Serial.begin(500000);
 }
 
 
 void loop() {
-	// wait for 1 milli second
-	while(micros() < last_time + 1000) {;}
+	// wait for 10 milli second
+	while(micros() < last_time + 10000) {;}
 	last_time = micros();
 
 
@@ -29,4 +29,5 @@ void loop() {
 	Serial.print(gyro_data.z());
 	Serial.println();
 }
+
 
