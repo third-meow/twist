@@ -14,4 +14,4 @@ I could probably just find an existing algorithm to do this, but I want to use a
 * find out how to format training data for RNNs
 * record training data with my arduino and IMU
 * train RNN
-* ... profit?
+* ???...profit?
